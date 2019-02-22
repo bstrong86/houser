@@ -35,4 +35,6 @@ massive(CONNECTION_STRING).then(db => {
 
 //ENDPOINTS
 
-app.get('/wizard')
+app.get('/api/wizard',ctrl.getHouses)
+app.post('/api/wizard', ctrl.addHouse)
+app.delete('/api/wizard/:id', ctrl.deleteHouse)
