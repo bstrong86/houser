@@ -27,10 +27,10 @@ export default class Dashboard extends Component {
       });
     }
 
-    deleteHouse(id) {
+    deleteHouse= (id) => {
       axios.delete(`/api/wizard/${id}`).then(response => {
         console.log(response)      
-        // this.getAllHouses()
+        this.getAllHouses()
       }
       )
     }
